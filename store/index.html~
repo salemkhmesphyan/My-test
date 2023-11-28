@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style2.css"/>
+    <title>e-store</title>
+  </head>
+  <body>
+  <div>
+    <header class=" black-80 tc pt4 avenir" style="border-radius:10px;padding: 5px;
+  margin: 5px; ">
+      <a href="/">
+        <cld-image public-id="store/logo_ja9ugi"></cld-image>
+      </a>
+      <h1 class="mt2 mb0 baskerville i fw1 f1 mh2">Nice E-Store</h1>
+      <h2 class="mt2 mb0 f6 fw4 ttc tracked i">Your satisfaction is our utmost pleasure...</h2>
+      <nav class="bt dmm bb bl br tc mw7 center mt4 flex justify-between flex-wrap " style="border-radius: 0px 16px 0px 16px;" >
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pv3 ph2 ph4-l" href="/">Home</a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-washed-red dib pv3 ph2 ph4-l" v-if="$auth.isAuthenticated" href="">
+          <router-link class="link black" to="/products">Products</router-link>
+        </a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pv3 ph2 ph4-l" v-if="$auth.isAuthenticated">
+          <router-link class="link black relative" to="/cart">Cart  </router-link>
+        </a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pv3 ph2 ph4-l pointer" v-if="!$auth.isAuthenticated && !$auth.loading">
+          <span id="qsLoginBtn" @click.prevent="login"><i class="fas fa-sign-in-alt mr2"></i>Login</span>
+        </a>
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pv3 ph2 ph4-l pointer"  v-if="$auth.isAuthenticated">
+          <router-link class="link black" to="/profile">Profile</router-link>
+        </a>     
+        <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pv3 ph2 ph4-l pointer"  v-if="$auth.isAuthenticated">
+           <span id="qsLogoutBtn" href="#" @click.prevent="logout"> Log out </span>
+        </a>
+      </nav>
+    </header>
+  </div>
+  <div class="search-box">
+        <input 
+          type="text"class="search-bar" placeholder="Search by name or price..." v-model="query"/>
+      </div>
+<div id="app" class="center mt4 flex justify-center flex-wrap" >
+    <div v-for="product in items" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store3_ph4qw4.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">Ore Sweater</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦15000</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div v-for="product in products" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store15_zf4xm1.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">McPherson T-shirt</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦4000</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div v-for="product in products" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store18_zif35h.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">McPherson Summer T-shirt</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦3500</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div v-for="product in products" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store22_cww7ir.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">Karpos Shoes</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦19500</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div v-for="product in products" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store14_rrxsc6.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">Rainbow T-shirt</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦5430</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div v-for="product in products" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store4_rlkr3u.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">Gregory Shoes</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦10500</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div v-for="product in products" :key="product.id" class="dib">
+      <article class="br2 ba dark-gray b--black-10 mv3 w-100 w-90-m w-90-l mw5 center">
+        <img src="store-images/store2_iuj9gd.jpg" height="300" width="300" alt="">
+        <div class="pa2 ph3-ns pb3-ns bg-washed-red">
+          <div class="dt w-100 mt1">
+            <div class="">
+              <h3 class="f6 mv0">RTote bag</h3>
+            </div>
+            <div class="">
+              <p class="f5 mv1">₦6000</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <nav class=" tc mw10 left mt4 flex justify-between flex-wrap"style="background-color:  #d3979588;border-radius:10px;padding: 5px;
+  margin: 5px; ">
+        
+        
+        <a style="margin:0px auto !important;" class="f6 f5-l link bg-animate black-80  dib pv3 ph2 ph4-l dark-gray" v-if="$auth.isAuthenticated">
+         <p>Created by en-salem</p>
+        </a>
+       
+      </nav>
+<style>
+body{
+
+font-family:Lemonada !important; 
+background-color: #666;
+background-image: url("store-images/bg.jpg");
+background-size: cover;
+font-family: Times;
+}
+.cart-position{
+  bottom: 8px;
+  left: 32px;
+  padding: 2px;
+}
+.search-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  
+  color: #313131;
+  font-size: 20px;
+
+  appearance: none;
+  border:none;
+  outline: none;
+  background: none;
+
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+}
+
+.search-box .search-bar:focus {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px 0px 16px 0px;
+}
+.dmm:hover{
+border-radius: 16px 0px 16px 0px;
+}
+
+</style>
+ 
+     
+   
+   
+   
+    <script src="vue.js" ></script> 
+    
+     <script>
+       new Vue( {
+        el: '#app',
+        alert("dd"),
+        data: {
+          newItem: '',
+          items: [
+            {
+              id: 1,
+              name: 'Read books',
+              completed: false,
+            },
+            {
+              id: 2,
+              name: 'Clean my room',
+              completed: true,
+            },
+          ],
+        },
+          })
+    </script>
+  </body>
+</html>

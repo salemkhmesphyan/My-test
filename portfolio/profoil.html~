@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>my profili</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<style>
+
+</style>
+</head>
+
+<body >
+
+
+
+<!--Header and Navigation Bar-->
+<div class="col-12 col-s-12 header-and-nav" style="background-color: #d39795;border-radius: 0px 16px 0px 16px;">
+<header class="col-4 col-s-4 header">
+  <h1>salem Portfolio</h1>
+</header>
+
+<nav class="col-8 col-s-8">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#intr">About my</a></li>
+    <li class="nav-item"><a href="#skill">MySkills</a></li>
+    <li class="nav-item"><a href="#project">My Projects</a></li>
+    <li class="nav-item"><a href="#conn">Contact me</a></li>
+   
+  </ul>
+</nav>
+
+</div>
+
+<!--Self Introduction Section-->
+<section class="col-12 col-s-12 self-intro" style="background-color: #48a26433;" id="intr">
+<div class="col-4"></div><img src="sme.jpg" class="col-4 profile-image" style="border-radius: 16px 0px 16px 0px;" /><div class="col-4"></div>
+<div class="col-3"></div><div class="col-6 self-intro-text">
+
+
+
+  <h2>Hello, I am salem. Welcome to My Portfolio.</h2>
+  <p>My name is Salem Khamis Bahyan, graduate of computer engineering in 2022 from Hadramaut University, College of Engineering and Petroleum.
+I started learning programming five years ago, self-taught, some of it from university, and I am still learning anything new in programming and improving myself further.</p>
+  </div>
+  <div class="col-3"></div>
+</section>
+
+
+<!--Skills Section-->
+<section class="col-12 col-s-12 skills-section" style="background-color: #48a26433;" id="skill">
+  <h2 class="col-12 col-s-12">My Skills</h2>
+  <ul class="col-8 col-s-8 skills-list">
+    <li>HTML (100%)</li>
+    <li>CSS (85%)</li>
+    <li>JavaScript (85%)</li>
+    <li>Bootstrap(95&percnt;)</li>
+    <li>Python (100%)</li>
+    <li>PHP (10&#37;)</li>
+    <li>Java (5&#37;)</li>
+    <li>Vue.js (50&percnt;)</li>
+    <li>Django (90&percnt;)</li>
+    <li>c++(60&percnt;)</li>
+    <li>c#(5&percnt;)</li>
+    <li>JQuery(70&percnt;)</li>
+    <li>Flask(100&percnt;)</li>
+    <li>PYQT5(95&percnt;)</li>
+  </ul>
+</section>
+<!--Projects Section-->
+
+
+<section class="col-12 col-s-12 porject-section" id="project">
+  <h2 class="col-12 col-s-12">My Projects</h2>
+  <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>web Project</h3>
+    <img src="hom1.png" width="500" height="300" />
+    <p>my application is to browse files by the network_web</p>
+  </div></div>
+
+  <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>Desktop Project</h3>
+    <img src="s1.png" width="500" height="300" />
+    <p>library_manager-web</p>
+  </div></div>
+
+  <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>Desktop Project</h3>
+    <img src="1.png" width="500" height="300" />
+    <p>exchange_text_messages</p>
+  </div></div>
+   <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>Desktop Project</h3>
+    <img src="cart1.png" width="500" height="300" />
+    <p>design_cards</p>
+  </div></div>
+
+ <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>Desktop Project</h3>
+    <img src="e1.png" width="500" height="300" />
+    <p>restaurant_manager</p>
+  </div></div>
+
+ <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>Desktop Project</h3>
+    <img src="co1.png" width="500" height="300" />
+    <p>store oil company data</p>
+  </div></div>
+
+ <div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>Desktop Project</h3>
+    <img src="sc1.png" width="500" height="300" />
+    <p>general_secondary_administration</p>
+  </div></div>
+<div class="col-4 col-s-4">
+   <div class="project-card">
+    <h3>see more my projects</h3>
+    <img src="index5.jpeg" width="500" height="300" />
+    <p><a href="https://github.com/salemkhmesphyan" style="color:black">github.com/salemkhmesphyan</a></p>
+  </div></div>
+
+
+</section>
+
+
+
+<!--Footer-->
+<footer class="col-12 col-s-12 footer" id="conn" style="border-radius: 16px 0px 16px 0px;">
+  <p>Created by en-salem</p>
+  <a href="https://github.com/salemkhmesphyan" style="color:black;"><img class="roun" src="th.jpeg" width="30" height="30" alt=""></a>
+   <a href="mailto:99zzz52@gmail.com" style="color:black;"><img class="roun" src="gmil.jpeg" width="30" height="30" alt=""></a>
+    <a href="https://wa.me/713151679" style="color:black;"><img class="roun" src="whtsp.png" width="30" height="30" alt=""></a>
+     <a href="tel:779-724-676" style="color:black;"><img class="roun" src="call.png" width="30" height="30" alt=""></a>
+</footer>
+
+
+
+
+</body>
+</html>

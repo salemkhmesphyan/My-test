@@ -1,0 +1,272 @@
+body{
+
+font-family:Lemonada !important; 
+background-color: #666;
+background-image: url("bg.jpg");
+background-size: cover;
+font-family: Times;
+}
+
+/* Small Screen */
+.container {
+  max-width: 100%;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+
+
+/* Large Screen */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-family: "Comfortaa", cursive;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Crimson Text", serif;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.header-and-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.header {
+  text-align: center;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  display: inline-block;
+}
+
+
+
+.header {
+  color: black;
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-item a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 27px 20px;
+}
+
+.nav-item a:hover {
+  background-color: #cd7091;
+  text-decoration: none;
+}
+@media only screen and (min-width: 768px) {
+  .nav-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+
+    text-align: right;
+  }
+}
+
+
+/* Self Introduction Section */
+.self-intro {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  
+}
+
+.profile-image {
+  object-fit: cover;
+}
+
+.self-intro-text h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .self-intro-text {
+    padding: 0px 10px;
+  }
+}
+/* Skills Section */
+.skills-section {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-section h2 {
+  text-decoration: underline;
+}
+
+.skills-list {
+  column-count: 2;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills-list {
+    column-count: 2;
+    margin: 0 auto;
+  }
+}
+
+.porject-section {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #a8dadc433;
+}
+
+.porject-section h2 {
+  text-decoration: underline;
+}
+
+.project-card {
+  border: solid 2px gray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.project-card img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background-color:  #d39795;
+  color: black;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+.roun{
+	border:1px solid blue;
+border-radius:5px; 
+}
