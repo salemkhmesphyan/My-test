@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>recipe </title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway');
+
+body {
+  
+  background: linear-gradient(to left, #FF5F6D , #FFC371);
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+main {
+  margin: 0;
+}
+
+main::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+ul.card-list,
+ul.card-list ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+ul.card-list {
+  text-align: center;
+}
+
+ul.card-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul.card-list > li h1 {
+  font: normal 24px 'Josefin Slab', serif;
+  padding: .25em .5em;
+  margin: 0;
+  text-align: center;
+}
+
+ul.card-list li {
+  display: inline-block;
+}
+
+ul.card-list > li {
+  vertical-align: top;
+  width: 400px;
+  padding: 0;
+  margin: .5em;
+  text-align: left;
+  border-radius: 5% 5% 0 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .3);
+}
+
+ul.card-list section {
+  height: 200px;
+}
+
+ul.card-list .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0 1em;
+  top: 0;
+  text-align: initial;
+  overflow-y: auto;
+  color: #ffffff;
+  background: rgba(0, 0, 0, .7);
+  box-sizing: border-box;
+  transform: translateY(-100%);
+  transition: transform .5s ease;
+}
+
+ul.card-list > li:hover .content {
+  position: absolute;
+  padding: 0 1em;
+  transform: translateY(0);
+}
+
+ul.card-list .content a.view-recipe {
+  display: block;
+  font-weight: 700;
+  width: 80%;
+  padding: 10px;
+  margin: 1em auto;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  transition: all 200ms ease-out;
+}
+
+ul.card-list .content a.view-recipe:hover {
+  color: #44dda0;
+  background: #ffffff;
+}
+
+ul.card-list > li section {
+  position: relative;
+  overflow: hidden;
+}
+
+ul.card-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul.categories ul.categories > li {
+  font-weight: 100;
+  font-size: .8em;
+  margin: .2em .1em;
+  color: #dddddd;
+}
+
+ul.card-list .content p {
+  line-height: 1.3em;
+  padding: 0;
+  margin: .7em 0;
+  }
+  .footer {
+  bottom: 10%;
+  background-color:  yellowgreen;
+  color: black;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}
+.roun{
+	border:1px solid blue;
+border-radius:5px; }
+.search-box {
+  width: 50%;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  
+  color: #313131;
+  font-size: 20px;
+
+  appearance: none;
+  border:none;
+  outline: none;
+  background: none;
+
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+}
+
+.search-box .search-bar:focus {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px 0px 16px 0px;
+}
+
+</style>
+</head>
+<body>
+
+<h1 
+align="center" style="color: #313131;
+
+  appearance: none;
+  
+  outline: none;
+  background: none;
+
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 16px 0px 16px;
+  transition: 0.4s;
+;background-color: yellowgreen;width: 90%;height: 20%;margin-left:auto;margin-right: auto;margin-top:0px;margin-bottom:0px;font-family: Noto Sans CJK JP Medium;font-size:50px ;border-radius: 0px 16px 0px 16px;">Recipe App</h1><br>
+<br>
+<div class="search-box">
+        <input 
+          type="text"class="search-bar" placeholder="Search ..." v-model="query"/>
+      </div>
+<main>
+  <!-- Row 1 -->
+  <ul class="card-list">
+    <li>
+      <article>
+        <h1>Caramel Apple Pork Chops</h1>
+        <section>
+          <img src="index3.jpeg" alt="Pork loin chops"/>
+          <div class="content">
+            <a class="view-recipe" href="#">View Recipe</a>
+            <ul class="categories">
+              <li>Dinner</li>
+              <li>Meat</li>
+              <li>American</li>
+              <li>Southern</li>
+            </ul>
+            <p>Succulent pork loin chops are paired brilliantly with slices of tart apple cooked in a satin-smooth sauce of butter, brown sugar, cinnamon, and nutmeg. A few chopped pecans over the top make this a delectable autumn entree.</p>
+            <p>Succulent pork loin chops are paired brilliantly with slices of tart apple cooked in a satin-smooth sauce of butter, brown sugar, cinnamon, and nutmeg. A few chopped pecans over the top make this a delectable autumn entree.</p>
+          </div>
+        </section>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Polenta Bake with Shrimp</h1>
+        <section>
+          <img src="index.jpeg" alt="Polenta Bake with Shrimp"/>
+          <div class="content">
+            <a class="view-recipe" href="#">View Recipe</a>
+            <ul class="categories">
+              <li>Dinner</li>
+              <li>Seafood</li>
+              <li>American</li>
+              <li>Southern</li>
+            </ul>
+          <p>This Southern-inspired single skillet dinner is warming and hearty—like comfort food all grown up. It’s simple and quick enough for a weeknight, and the whole family will be grateful. Whole milk and Parmesan cheese give the polenta an extra dose of creaminess, and plenty of large tail-on shrimp get tossed in paprika and butter for layers of decadent flavor. For maximum charring with minimal hands-on work, the shrimp and cherry tomatoes are broiled before being added to the skillet. Before serving, the dish gets a smattering of fresh scallions for crunch and a bright green pop of color. Get your skillet (and forks) ready.</p>
+          </div>
+        </section>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Polenta Bake with Shrimp with a Long Title</h1>
+        <section>
+          <img src="index2.jpeg" alt="Pork loin chops"/>
+          <div class="content">
+            <a class="view-recipe" href="#">View Recipe</a>
+            <ul class="categories">
+              <li>Dinner</li>
+              <li>Seafood</li>
+              <li>American</li>
+              <li>Southern</li>
+            </ul>
+            <p>This Southern-inspired single skillet dinner is warming and hearty—like comfort food all grown up. It’s simple and quick enough for a weeknight, and the whole family will be grateful. Whole milk and Parmesan cheese give the polenta an extra dose of creaminess, and plenty of large tail-on shrimp get tossed in paprika and butter for layers of decadent flavor. For maximum charring with minimal hands-on work, the shrimp and cherry tomatoes are broiled before being added to the skillet. Before serving, the dish gets a smattering of fresh scallions for crunch and a bright green pop of color. Get your skillet (and forks) ready.</p>
+          </div>
+        </section>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Mint Julip</h1>
+        <section>
+          <img src="Mint Julep glass tools.jpg" alt="Pork loin chops"/>
+          <div class="content">
+            <a class="view-recipe" href="#">View Recipe</a>
+            <ul class="categories">
+              <li>Rum</li>
+              <li>Sugar</li>
+              <li>Mint</li>
+              <li>Soda water </li>
+            </ul>
+<p>
+Add the mint sprigs, caster sugar and a couple of tablespoons of crushed ice.
+Begin 'massaging' the mix together with a spoon. The caster sugar helps to bring out the flavour of the mint. Breaking or crushing the mint makes the taste sour, hence the need to gently fold and stir.
+Add 25ml of rum, more crushed ice and continue 'massaging'. Fill with ice, pour in the second 25ml shot of rum and add a dash of soda, if desired.
+</p>
+          </div>
+        </section>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Shakshuka With Feta</h1>
+        <section>
+          <img src="chi.jpg" alt="Pork loin chops"/>
+          <div class="content">
+            <a class="view-recipe" href="#">View Recipe</a>
+            <ul class="categories">
+              <li>Dinner</li>
+              <li>Seafood</li>
+              <li>American</li>
+              <li>Southern</li>
+            </ul>
+<p>Heat oil in a large skillet over medium-low head. Add onion and bell papper. Cook gently until very soft, about 20 minutes. Add garlic and cook until tender, 1 to 2 minutes; stir in cumin, paprika and cook 1 minute. Pour in tomatoes and season with 3/4 teaspoon salt and 1/4 teaspoon pepper</p>
+          </div>
+        </section>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h1>Chai Oatmeal</h1>
+        <section>
+          <img src="oatmeal.jpg" alt="Pork loin chops"/>
+          <div class="content">
+            <a class="view-recipe" href="#">View Recipe</a>
+            <ul class="categories">
+              <li>Milk, salt, coriander, cardamom, cinnamon, </li>
+              <li>Seafood</li>
+              <li>American</li>
+              <li>Southern</li>
+            </ul>
+For an extra thick and creamy bowl, add oat bran. It'll make for a hearty helping and also add more fiber to your meal. If you love the taste of chai, you'll enjoy this spiced version with coriander, cinnamon, and turmeric.
+          </div>
+        </section>
+      </article>
+    </li>
+  </ul>
+</main>
+<br>
+<footer class="footer" id="conn" style="border-radius: 16px 0px 16px 0px;">
+  <p>Created by en-salem</p>
+  <a href="https://github.com/salemkhmesphyan" style="color:black;"><img class="roun" src="th.jpeg" width="30" height="30" alt=""></a>
+   <a href="mailto:99zzz52@gmail.com" style="color:black;"><img class="roun" src="gmil.jpeg" width="30" height="30" alt=""></a>
+    <a href="https://wa.me/713151679" style="color:black;"><img class="roun" src="whtsp.png" width="30" height="30" alt=""></a>
+     <a href="tel:779-724-676" style="color:black;"><img class="roun" src="call.png" width="30" height="30" alt=""></a>
+</footer>
+<script src="vue.js" ></script> 
+<script></script>
+</body>
+</html>
